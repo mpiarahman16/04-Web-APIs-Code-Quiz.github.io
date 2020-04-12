@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 *{
   box-sizing: border-box;
@@ -11,19 +12,10 @@ body {
 .quiz-container{
   height: 30x;
   widows: 25x;
-  background-color: turquoise;
+  background-color:turquoise;
   margin: 25px auto;
   border-radius: 7px;
   padding: 35px;
-}
-
-.quiz-container .questions{
-padding: 15px;
-background-color: teal;
-border-radius: 7px;
-color: gainsboro;
-font-size: 30px;
-float: center;
 }
 .flex {
   display: flex;
@@ -43,11 +35,20 @@ body{
 }
 h1{
   width: 100vw;
-  background: white;
+  background: beige;
   color:teal;
   padding: 30px 0;
   margin: 0 0 17px;
  text-align: center;
+ font-size: 35px;
+ color: black;
+ letter-spacing: 1.7;
+
+}
+h3{
+  text-align: center;
+  letter-spacing: 1.7;
+  font-size: 30px;
 }
 button{
   width: 85px;
@@ -55,9 +56,11 @@ button{
   text-align: center;
   vertical-align: middle;
   font-size: 16px;
-  background-color: blanchedalmond;
+  background-color:blanchedalmond;
   transition: all 400ms;
-}
+  margin: 10px;
+  margin: auto;
+}  
 button:hover{
   color: whitesmoke;
   background: royalblue;
@@ -68,4 +71,7 @@ button:hover{
 }
 .justify-content{
   justify-content:center;
+}
+.w-100{
+  width: 100%;
 }
