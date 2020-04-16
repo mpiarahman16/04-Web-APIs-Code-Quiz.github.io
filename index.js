@@ -3,7 +3,7 @@ const quizTimer = document.getElementById ("quiz--timer");
 const quizButton = document.getElementById("quiz--start");
 
 
-let interval 
+let interval = 10;
 let timeleft = 60;
 let currQuestion = 0;
 
@@ -56,15 +56,15 @@ const endQuiz = () => {
     button.addEventListener("click", () => {
        const input = document.getElementById("quiz--highscore");
        const score = quizTimer.innerText;
-       const initials = input.nodeValue;
+       const initials = input.value;
        const userJSON = localStorage.getItem("initials");
 
        if(userJSON){
            const user = JSON.parse(userJSON);
            const newUser = [...user, score];
-           return localStorage.setItem("initials", JSON.stringify(userJSON));
+           return localStorage.setItem("user", JSON.stringify(score));
        }
-       localStorage.setItem("initials", JSON.stringify(score));
+       localStorage.setItem("user", JSON.stringify(score));
     });  
     div.append(input);
     div.append(button);
